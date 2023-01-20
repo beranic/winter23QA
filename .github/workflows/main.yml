@@ -27,7 +27,7 @@ jobs:
           with:
             name: measurements_backend_jar
             path: measurements_backend/staging
-        - name: Build and analyze
+        - name: QA
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
